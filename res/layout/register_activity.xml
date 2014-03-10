@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:background="@drawable/bg">
+
+     <FrameLayout
+        android:id="@+id/layout_title"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Button
+            android:id="@+id/bt_registerBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        
+        <Button android:id="@+id/bt_ok_rg"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonbg_selector"
+            android:layout_width="wrap_content"
+            android:text="注册"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/register_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_title"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" >
+
+   
+
+    <TableLayout
+        android:id="@+id/table_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+         >
+
+        <TableRow  android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_userName_rg"
+                style="@style/TextViewStyle"
+                android:text="@string/usename" />
+
+            <EditText
+                android:id="@+id/ed_userName_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editpassword_bg"
+                android:hint="@string/useNameInfo" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_userPwd_rg"
+                style="@style/TextViewStyle"
+                android:text="@string/pwd" />
+
+            <EditText
+                android:id="@+id/ed_userPwd_rg"
+                android:background="@drawable/editpassword_bg"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/pwdInfo" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp" 
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_phoneNo_rg"
+                style="@style/TextViewStyle"
+                android:text="@string/phoneNo" />
+
+            <EditText
+                android:id="@+id/ed_phoneNo_rg"
+                android:paddingLeft="5dp"
+                 android:inputType="phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editpassword_bg"
+                android:hint="@string/phoneNoInfo" />
+        </TableRow>
+    </TableLayout>
+
+    </RelativeLayout>
+    
+     
+
+</RelativeLayout>

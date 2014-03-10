@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/mostnews_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mostnews" 
+            android:background="@drawable/mostnewpost_selector"/>
+
+        <Button
+            android:id="@+id/bestposts_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/mostnewpost_selector"
+            android:text="@string/bestposts" />
+        
+         <Button
+            android:id="@+id/serchposts_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/mostnewpost_selector"
+            android:text="@string/serchposts" />
+         
+         <!-- <Button
+            android:id="@+id/sendposts_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendposts"  /> -->
+         
+         <Button
+            android:id="@+id/myposts_view_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/mostnewpost_selector"
+            android:text="@string/myposts"  />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent" />
+
+</LinearLayout>

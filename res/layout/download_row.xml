@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center_vertical"
+    android:minHeight="60dip"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="20dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/videoDownName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18dip" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dip" >
+
+          
+
+            <ProgressBar
+                android:id="@+id/videoDownProgressBar"
+                android:layout_width="200dip"
+                android:layout_height="10dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:indeterminateOnly="false"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                style="?android:attr/progressBarStyleHorizontal"
+                />
+            
+              <TextView
+                android:id="@+id/videoDownProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="13dip" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <ImageView
+        android:id="@+id/PurpleRowArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="gone" >
+    </ImageView>
+    -->
+
+</LinearLayout>

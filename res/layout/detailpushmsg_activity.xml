@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+      android:background="@color/transparent"
+      android:layout_width="match_parent" >
+    <FrameLayout
+        android:background="@drawable/title_bg"
+        android:id="@+id/pushDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Button
+            android:id="@+id/bt_showDetailBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/back_selector"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pushdetail"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+    </FrameLayout>
+    
+     <TextView 
+            android:id="@+id/tv_showpushTitle"
+            android:layout_below="@id/pushDetail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="23sp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+        
+         <TextView 
+            android:id="@+id/tv_pushtime"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/tv_showpushTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+           />
+         
+       
+    
+          <TextView 
+            android:id="@+id/tv_showpushContent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="17"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_pushtime"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"/>
+        
+
+</RelativeLayout>

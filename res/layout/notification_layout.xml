@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_notifationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/notification_title" />
+    
+    <LinearLayout android:id="@+id/layout_show"
+        android:layout_below="@id/iv_notifationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/notification_contentbg"
+        >
+        
+       <TextView android:id="@+id/tv_notificationContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:maxLines="9"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        android:background="@color/transparent"
+        />
+        
+        
+    </LinearLayout>
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_show"
+        android:layout_height="35dp"
+        android:background="@drawable/button_bg"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/bt_notificationenter"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="进入"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        
+        
+        <Button android:id="@+id/bt_notificationCancel"
+              android:background="@color/transparent"
+              android:text="取消"
+              android:textColor="@color/white"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"/>
+        
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="165dp"
+    android:layout_gravity="center"
+    android:gravity="center" 
+    android:background="@drawable/galleryitem_bg"
+   >
+    
+    <com.ms.learn.widgets.RemoteImageView 
+        
+        android:id="@+id/img_gallry"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        
+        />
+    
+    
+    <TextView android:id="@+id/tv_gallryDisc"
+        android:layout_below="@id/img_gallry"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="13sp"
+        android:ellipsize="end" 
+        android:singleLine="true"
+        android:layout_width="120dp"
+        android:layout_height="20dp"/>
+    
+    <View android:id="@+id/line"
+         android:layout_below="@id/tv_gallryDisc"
+        android:layout_width="match_parent"
+        android:background="@drawable/gallery_linebg"
+        android:layout_height="5dp"/>
+    
+    <TextView android:id="@+id/tv_gallrytitle"
+        android:layout_below="@id/line"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:lines="2"
+        android:ellipsize="end" 
+        android:background="@color/transparent"
+        android:layout_width="120dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

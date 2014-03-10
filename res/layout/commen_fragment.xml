@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+   <com.ms.learn.widgets.ProgrDialog
+        android:id="@+id/comend_load"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center" /> 
+
+    <ListView
+        android:id="@+id/lv_commend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:background="@color/transparent"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/detail_view_tab"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:textSize="20sp"
+                android:textColor="@color/grey"
+                android:background="@drawable/videodetail_selector"
+                 android:layout_centerHorizontal="true"
+                android:text="详情" />
+
+            <ImageView
+                android:id="@+id/iv_detail"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/detail_view_tab"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/fragment_up" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/about_view_tab"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:background="@drawable/videodetail_selector"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:textColor="@color/grey"
+                android:layout_centerHorizontal="true"
+                android:text="内容" />
+
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/about_view_tab"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:background="@drawable/fragment_up" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/comment_view_tab"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:background="@drawable/videodetail_selector"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:textColor="@color/grey"
+                android:layout_centerHorizontal="true"
+                android:text="评论" />
+
+            <ImageView
+                android:id="@+id/iv_commit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/comment_view_tab"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:background="@drawable/fragment_up" />
+        </RelativeLayout>
+        
+        
+    </RadioGroup>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/office_layoutitem"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" >
+
+        <TextView
+            android:id="@+id/tv_officeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/tv_officeDecrible"
+            android:layout_marginTop="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_below="@id/tv_officeName"
+            android:ellipsize="end"
+            android:lines="1"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_officeDowntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/ib_officeDown"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btdownload_selector"
+        android:layout_marginLeft="5dp"
+        android:text="下载"
+        android:layout_weight="1" 
+        android:textColor="@color/grey"
+        android:layout_marginRight="3dp"
+        />
+
+</LinearLayout>

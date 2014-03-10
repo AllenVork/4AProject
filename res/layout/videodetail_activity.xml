@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <!-- 切换显示内容 -->
+
+    <FrameLayout
+        android:id="@+id/layout_videoAll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/black"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+           
+
+            <VideoView
+                android:id="@+id/video_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+            <!-- 操作视频的按钮 -->
+             <TextView
+                android:id="@+id/tv_videoTitle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:layout_height="30dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/showButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:background="@drawable/imgdot_bg"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_pause"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical" 
+                    android:background="@drawable/pasue"/>
+
+                <TextView
+                    android:id="@+id/tv_finishTime"
+                    android:layout_weight="1"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@id/bt_pause"
+                    android:textSize="11sp" />
+
+                <SeekBar
+                    android:id="@+id/sk_time"
+                    android:layout_weight="10"
+                    android:layout_width="170dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_finishTime"/>
+
+                <TextView
+                    android:id="@+id/tv_totalTime"
+                    android:layout_weight="1"
+                    android:layout_width="35dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/sk_time"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/bt_changeBig"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                     android:layout_centerVertical="true"
+                    android:background="@drawable/tobig"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.ms.learn.widgets.ProgrDialog
+            android:id="@+id/pro_load"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <LinearLayout 
+        android:id="@+id/videoDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_videoAll"
+        android:orientation="vertical">
+   
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/fragment_tab"
+            android:name="com.ms.learn.fragment.TabFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+        
+      
+    </LinearLayout>
+   
+   <Button android:id="@+id/bt_download"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:background="@color/dark_123"
+        android:gravity="center"
+        android:text="缓存"/> 
+      </LinearLayout>
+</RelativeLayout>

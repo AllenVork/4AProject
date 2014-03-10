@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/loginbg"
+    tools:context=".LoginActivity" >
+    
+     <View android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent"/> 
+
+    <TableLayout
+        android:id="@+id/table_login"
+        android:layout_width="280dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/loginedit_bg" >
+
+        <TableRow 
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_userName"
+                style="@style/TextViewStyle"
+                android:text="@string/count" />
+
+            <EditText
+                android:id="@+id/ed_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editpassword_bg"
+                android:hint="@string/useNameInfo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_userPwd"
+                style="@style/TextViewStyle"
+                android:text="@string/pwd" />
+
+            <EditText
+                android:id="@+id/ed_userPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="8dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/editpassword_bg"
+                android:hint="@string/pwdInfo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center" >
+
+            <TextView
+                android:gravity="center_vertical|left"
+                android:id="@+id/tv_remenberPwd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/rePwd" />
+             <!-- com.ms.learn.widgets.Filp -->
+            <com.ms.learn.widgets.SwitchButton
+                android:id="@+id/bt_isRemPwd"
+                 android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+               
+                />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/btlogin_selector"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/bt_register"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:background="@drawable/btlogin_selector"
+            android:text="注册" />
+    </LinearLayout>
+
+    <!-- <Button
+        android:id="@+id/bt_localLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout_login"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        android:text="locallogin" /> -->
+
+</LinearLayout>

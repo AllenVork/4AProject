@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <FrameLayout
+        android:id="@+id/postsDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/bt_postsDetail"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tv_postsDetailTitle"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/bt_postRecieve"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="5dp"
+            android:text="回复"
+            android:background="@drawable/buttonbg_selector"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/postTilte_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/transparent"
+        android:layout_below="@id/postsDetail_layout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_postsTilte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lines="2"
+            android:textStyle="italic"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_postsUser"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_postsTime"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
+                
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+  <!--    <ScrollView
+         android:id="@+id/web_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/postTilte_layout"
+        android:fadeScrollbars="true" >  </ScrollView>-->
+      
+
+        <WebView
+            android:id="@+id/web_content"
+            android:layout_below="@id/postTilte_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:textSize="18sp"
+            android:scrollbars="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+          />
+   
+      <Button 
+        android:id="@+id/bt_showReceiveList"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/web_content"
+        android:background="@drawable/btdownload_selector"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

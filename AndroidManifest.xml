@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ms.learn"
+    android:versionCode="3"
+    android:versionName="1.04" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <!-- jiguang Required -->
+    <permission
+        android:name="com.ms.learn.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+     
+    <!-- Optional. Required for location feature -->
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+    <!-- Required -->
+    <uses-permission android:name="com.ms.learn.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="ALearnApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ms.learn.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ms.learn.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.MenuActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.NewsActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ExamActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.StudyVideoActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ForumActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.OfficeActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.PersonActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.AboutUsActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.MessageActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.RecommendActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.CourseActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.DownloadActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.HistoryActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ShowNewsActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.OfficeDetailActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.VideoKindDtailActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.OfficeDownLoadActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ExamInfoActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ResearchInfoActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ForumListActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ShowEvaluationResultActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ForumDetailActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.PostsDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.ms.learn.activity.SendPostsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ReceivePostListActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.SdtActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ShowErweimaActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.SearchVideoActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.ShowDetailPushMsgActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.EvaluationDetailActivity" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.RecivPostActivity" >
+        </activity>
+        <activity
+            android:name="com.ms.learn.activity.NoticationActivity"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity android:name="com.ms.learn.activity.CaptureActivity" >
+        </activity>
+        <activity
+            android:name="com.ms.learn.activity.VideoDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="user" >
+        </activity>
+
+        <service android:name="com.ms.learn.service.DownloadService" >
+        </service>
+
+        <!-- 极光推送 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.ms.learn" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.ms.learn" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.ms.learn.activity.JgPushRecever"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="com.ms.learn" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="8bc3790c85e6efaf887dcd2b" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+    </application>
+
+</manifest>

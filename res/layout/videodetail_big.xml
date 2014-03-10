@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <!-- 切换显示内容 -->
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_videoAll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/black"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <VideoView
+                android:id="@+id/video_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+            <!-- 操作视频的按钮 -->
+             <TextView
+                android:id="@+id/tv_videoTitle"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:lines="1"
+                android:background="@android:color/black"
+                android:layout_height="30dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/showButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/imgdot_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_pause"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tv_finishTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:textSize="11sp" />
+
+                <SeekBar
+                    android:id="@+id/sk_time"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="5" />
+
+                <TextView
+                    android:id="@+id/tv_totalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:textSize="11sp" />
+
+                <Button
+                    android:id="@+id/bt_changeBig"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.ms.learn.widgets.ProgrDialog
+            android:id="@+id/pro_load"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center" />
+    </FrameLayout>

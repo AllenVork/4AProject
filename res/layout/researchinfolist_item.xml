@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_researchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupResearch"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="25dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/rb_choicA"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/rb_choicB"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/rb_choicC"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/rb_choicD"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+    </RadioGroup>
+
+</LinearLayout>

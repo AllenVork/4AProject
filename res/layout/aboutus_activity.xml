@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+     <FrameLayout
+        android:id="@+id/aboutus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/bt_aboutus"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tv_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/aboutus"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+    </FrameLayout>
+    
+    <ImageView 
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/aboutus_layout"
+        android:background="@drawable/aboutlogo"
+        
+        />
+    <TextView android:id="@+id/showtitle"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    
+    <TextView 
+        android:id="@+id/tv_showContent"
+         android:layout_below="@id/showtitle"
+         android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+         android:scrollbars="none"
+         android:maxLines="17"
+        android:text="@string/aboutusinfo"
+        android:textColor="@color/grey"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

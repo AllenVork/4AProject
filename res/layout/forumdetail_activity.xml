@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <FrameLayout
+        android:id="@+id/forumDetail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_bg" >
+
+        <Button
+            android:id="@+id/bt_forumDetail"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_selector" />
+
+        <TextView
+            android:id="@+id/tv_forumDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"/>
+
+        
+        <Button android:id="@+id/bt_sendPosts"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_height="35dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:text="@string/sendpost"
+            android:background="@drawable/buttonbg_selector"
+            android:textColor="@color/white"/>
+   
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/forumDetail_layout"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/forumDetailFragment_tab"
+            android:name="com.ms.learn.fragment.TabFragmentForumDetail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

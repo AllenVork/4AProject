@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/transparent">
+    
+    <com.ms.learn.widgets.RemoteImageView 
+        android:id="@+id/img_videokinddetail"
+         android:layout_marginLeft="15dp"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        
+        />
+    
+    
+    <TextView android:id="@+id/tv_kindNameDetail"
+        
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:ellipsize="end" 
+        android:layout_toRightOf="@id/img_videokinddetail"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView android:id="@+id/tv_videoChangetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_kindNameDetail"
+        android:layout_toRightOf="@id/img_videokinddetail"/>
+
+</RelativeLayout>

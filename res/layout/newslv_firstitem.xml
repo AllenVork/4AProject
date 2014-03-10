@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+     >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_viewPager"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:id="@+id/showNewsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/imgdot_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_newsPagertitle"
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:lines="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/newsviewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+             >
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
